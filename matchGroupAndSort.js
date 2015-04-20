@@ -1,5 +1,5 @@
 //shows planes by type, descending, after removing all GRND, GLID and NAN planes
-
+use planes
 db.planesFnew.aggregate( [
   { $match:
     { 'properties.PlaneType':
@@ -16,6 +16,6 @@ db.planesFnew.aggregate( [
     }
 ],
 {
-  explain: true
+  explain: false
 }
 )

@@ -1,5 +1,5 @@
 //shows planes by type, descending
-
+use planes
 db.planesFnew.aggregate( [
   { $group:
     { _id: "$properties.PlaneType",
@@ -11,5 +11,5 @@ db.planesFnew.aggregate( [
     }
 ],
 {
-  explain: true
+  explain: false
 })
