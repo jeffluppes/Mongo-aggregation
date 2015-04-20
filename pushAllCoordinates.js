@@ -11,5 +11,5 @@ db.planes.aggregate( [
 }
 ],
 {
-  explain: true
+  explain: false
 })
