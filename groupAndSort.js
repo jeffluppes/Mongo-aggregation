@@ -9,4 +9,7 @@ db.planesFnew.aggregate( [
     {$sort:
       { "number_of_planes": -1}
     }
-])
+],
+{
+  explain: true
+})

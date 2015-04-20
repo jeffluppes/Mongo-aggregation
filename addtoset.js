@@ -10,4 +10,7 @@ db.planes.aggregate( [
     coordinates:{$addToSet: "$geometry.coordinates"}
     }
 }
-])
+],
+{
+  explain: true
+})
